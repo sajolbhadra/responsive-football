@@ -1,35 +1,30 @@
 /* --------------
------font
+---------font
 -------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-/* common style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------------
+-----common style ----
+---------------------*/
 body{
     font-family: 'Poppins', sans-serif;
     margin-left: 0px;
     margin-top: 0px;
-    margin-right: 0px;
-    
+    margin-right: 0px; 
 }
 
-/* -------------
------Header
------------- */
+
+/* -----------------------
+-------------Header and cover
+---------------------- */
 header{
     display: flex;
-    flex-direction: row;
-    
-    
-
+    flex-direction: row;  
 }
 nav{
     background-color: rgb(27, 24, 195);
     position: absolute;
     top: 42px;
-
 }
-
-
 nav a{
     text-decoration: none;
     font-size: 24px;
@@ -45,6 +40,7 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 10px 24px;
     position: absolute;
     top: 42px;
@@ -54,8 +50,16 @@ nav a{
     width: 100%;
     background-color: rgb(27, 24, 195);
     padding-top: 153px;
-    padding-bottom: 700px;
+    padding-bottom: 675px;
     
+}
+.header-image{
+    /* position: absolute;
+    margin-top: 153px;
+    margin-bottom: 86px;
+    margin-right: 141px; */
+    /* height: 438px;
+    width: 153px; */
 }
 .copa-america{
     position: absolute;
@@ -64,12 +68,8 @@ nav a{
     margin-left: 156px;
     margin-top: 207px;
     color: #FFFFFF;
-
-   
 }
-
-.copa-america h2{
-    font-weight: 700 ;
+.copa-america h2{ 
     font-size: 64px;
     line-height: 80px;
 }
@@ -77,14 +77,6 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-}
-.half-width h2{
-    display: flex;
-    flex-direction: column;
-    top: 207;
-    bottom: 240;
-
 }
 .half-width img{
     position: absolute;
@@ -99,6 +91,11 @@ nav a{
     color: white;
     background-color: #E02C6D;
 }
+.button:hover  {
+
+    transform: scale(1.25);
+    transition: .5s;
+}
 span{
     padding-left: 8px;
 }
@@ -107,13 +104,11 @@ span{
 }
 
 
-/* -------------
-----players
-------------- */
-/* .football-player{
-    
-} */
-/* Football Players Style */
+/* ----------------
+-------players
+------------------ */
+
+/* -----Football Players Style--- */
 .football-player{
     margin-left: 180px;
     margin-right: 210px;
@@ -200,9 +195,9 @@ span{
 
 
 
-/* ------------------
---middle banner--
------------------- */
+/* ----------------------
+-------middle banner-
+------------------------ */
 .middle-banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -226,21 +221,29 @@ span{
 }
 
 /* ----------------------
---Extra Style
+--Extra Content Style
 ---------------------- */
-
-.mail-subcription{
+/* ----------------------
+---mail Subscription
+---------------------- */
+.mail-subcription-title{
     color: #FFFFFF;
     background-color: rgb(27, 24, 195) ;
     margin-top: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     font-size: 40px;
 }
-.mail-subcription p {
+.mail-subcription form {
     display: flex;
-    padding-right: 20px;
+    justify-content: center;
+    padding: 1px 100px 50px 100px;
+    border-right: 200px;
+
+
+
+
 }
 
 /* --------------------
@@ -249,6 +252,7 @@ span{
 .live{
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 
@@ -264,15 +268,10 @@ span{
     margin-top: 158px;
     margin-bottom: 63px;
 }
-.social-media-icon img{
-    margin-top: 20px;
-}
-/* .social-media-icon-image{
-    height: 302px;
-    width: 320px;
-} */
+
 .copyright-info{
     display: flex;
     justify-content: center;
     margin-top: 20px; 
 }
+
