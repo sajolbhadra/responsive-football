@@ -199,6 +199,7 @@ span{
     padding-bottom: 158px;
     margin-left: 182px;
     margin-top: 165px;
+    width: 466px;
 }
 .half-width-2{
     width: 466px;
@@ -267,5 +268,72 @@ span{
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+}
+
+
+
+/* ----------------
+--- Media Query
+    For mobile phone--
+------------------------ */
+@media (max-width: 768px){
+    .top-players, .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .heading{
+        width: 10%;
+        background-color: rgb(27, 24, 195);
+        margin-right: 300px;
+    }
+    .middle-banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .half-width-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        width: 40%;
+    }
+}
+
+
+/* ----------------
+--- Media Query
+    For Tablet--
+------------------------ */
+@media (max-width: 1024px){
+    .top-players, .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    nav{
+        display: none;
+    }
+    .heading{
+        width: 10%;
+        background-color: rgb(27, 24, 195);
+        margin-right: 300px;
+    }
+    .middle-banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .half-width-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        width: 40%;
+    }
 }
 
