@@ -30,8 +30,10 @@ nav a{
     font-size: 24px;
     margin-left: 150px;
     color: #FFFFFF;
+padding: 5px 5px;
 }
 .login-button{
+    border-radius:35px;
     text-decoration: none;
     color: white;
     background-color: #E02C6D;
@@ -87,9 +89,16 @@ nav a{
 }
 .button{
     text-decoration: none;
+    border-radius: 35px;
     padding: 10px 24px 10px 24px ;
     color: white;
     background-color: #E02C6D;
+}
+a:hover{
+    border-radius: 35px;
+    background-color: blanchedalmond;
+    color: blue;
+    
 }
 .button:hover  {
     transform: scale(1.25);
@@ -276,7 +285,7 @@ span{
 --- Media Query
     For mobile phone--
 ------------------------ */
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
     .top-players, .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -286,6 +295,8 @@ span{
         display: none;
     }
     .heading{
+        display: flex;
+        
         width: 10%;
         background-color: rgb(27, 24, 195);
         margin-right: 300px;
@@ -300,40 +311,10 @@ span{
         grid-template-columns: repeat(1, 1fr);
     }
     .footer{
-        width: 40%;
-    }
-}
+        width: 100%;
+display: flex;
+flex-direction: column;
 
-
-/* ----------------
---- Media Query
-    For Tablet--
------------------------- */
-@media (max-width: 1024px){
-    .top-players, .players{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-    nav{
-        display: none;
-    }
-    .heading{
-        width: 10%;
-        background-color: rgb(27, 24, 195);
-        margin-right: 300px;
-    }
-    .middle-banner{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-    }
-    .half-width-2{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .footer{
-        width: 40%;
     }
 }
 
